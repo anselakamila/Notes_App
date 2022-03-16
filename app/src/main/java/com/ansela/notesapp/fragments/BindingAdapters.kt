@@ -60,9 +60,9 @@ class BindingAdapters {
             }
         }
 
-        @BindingAdapter("android:sendDataToUpdataFragment")
+        @BindingAdapter("android:sendDataToUpdateFragment")
         @JvmStatic
-        fun sendDataToUpdataFragment(view: ConstraintLayout, currentItem: NoteData){
+        fun sendDataToUpdateFragment(view: ConstraintLayout, currentItem: NoteData){
             view.setOnClickListener{
                 val action = ListFragmentDirections.actionListFragmentToUpdataFragment(currentItem)
                 view.findNavController().navigate(action)

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="args"
-            type="com.ansela.notesapp.fragments.update.UpdataFragmentArgs" />
+            type="com.ansela.notesapp.fragments.update.UpdateFragmentArgs" />
 
     </data>
 
@@ -36,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/_60dp"
             android:entries="@array/priorities"
-            android:parsePriorityColor="@{args.currentItem.priority}"
+            android:parsePriorityToInt="@{args.currentItem.priority}"
             android:paddingStart="@dimen/_20dp"
             android:paddingEnd="@dimen/_20dp"
             app:layout_constraintStart_toStartOf="parent"

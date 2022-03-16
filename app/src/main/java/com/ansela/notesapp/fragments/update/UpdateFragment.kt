@@ -9,14 +9,14 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.ansela.notesapp.R
-import com.ansela.notesapp.UpdataFragmentArgs
 import com.ansela.notesapp.data.model.NoteData
 import com.ansela.notesapp.data.viewModelsData.NotesViewModel
 import com.ansela.notesapp.databinding.FragmentUpdataBinding
 
-class UpdataFragment : Fragment(){
 
-    private val args by navArgs<UpdataFragmentArgs>()
+class UpdateFragment : Fragment(){
+
+    private val args by navArgs<UpdateFragmentArgs>()
     private val mSharedViewModels : SharedViewModels by viewModels()
     private val mNotesViewModel : NotesViewModel by viewModels()
 
